@@ -1,0 +1,23 @@
+Instructions for app:
+
+1: CALIBRATION
+Set calibration mode to ON, press left and right buttons to set the distance between the two markers to 1cm. Use a ruler to measure.
+Set calibration mode to OFF, and balance the phone on a line on the x and y axis to find the center of mass of the phone and adjust the green arrow to it.
+
+2:RUNNING EXPERIMENT
+Spin the phone towards yourself, with the screen facing to the right. Make sure not to drop it! Black cross will show the position at the accelerometer sensor.
+
+3:GENERAL INFORMATION
+This program works by recording the x and y acceleration, alongside with the z axis gyroscope to find the radius.
+
+a == w^2*r (centripetal acceleration definition)
+sqrt(ax^2 + ay^2) == w^2*r
+r == sqrt(ax^2 + ay^2)/(w^2) (re-arranging equation)
+
+Once the radius is found, the arctan() of ay/ax gives us the angle from where to place the radius on.
+Knowing the sign of the x and y accelerations helps determine which quadrant the sensor is in.
+
+This program is assuming that the accelerometer x and y are in the same package.
+
+Program and instructions written by Clement Heyd clement.heyd04@gmail.com
+With inspiration and help from Scott Dudley sdudley@tasisengland.org
