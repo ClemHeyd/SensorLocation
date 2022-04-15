@@ -1,2 +1,4 @@
 # SensorLocation
-README
+Phone requirements:
+- Accelerometer
+- Gyroscope
